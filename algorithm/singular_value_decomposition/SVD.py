@@ -1,15 +1,16 @@
 import numpy as np
 
 
-def svd(M):
-    """
-    Args:
-        M: numpy matrix of shape (m, n)
-    Returns:
-        u: numpy array of shape (m, m).
-        s: numpy array of shape (k).
-        v: numpy array of shape (n, n).
-    """
-    u, s, v = np.linalg.svd(M)
+def svd(A, k):
+    U, S, Vt = np.linalg.svd(A, full_matrices=False)
 
-    return u, s, v
+    if k < S.shape[0]:
+        U_truncated = U[:, :k]
+        S_truncated = np.diag(S[:k])
+        Vt_truncated = Vt[:k, :]
+    else:
+        U_truncated = U
+        S_truncated = S
+        Vt_truncated = Vt
+
+    return U_truncated, S_truncated, Vt_truncated
