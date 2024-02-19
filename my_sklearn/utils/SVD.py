@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def svd(A, k):
+def truncated_SVD(A, k):
     U, S, Vt = np.linalg.svd(A, full_matrices=False)
 
     if k < S.shape[0]:
@@ -14,3 +14,9 @@ def svd(A, k):
         Vt_truncated = Vt
 
     return U_truncated, S_truncated, Vt_truncated
+
+
+def SVD(A):
+    U, S, Vt = np.linalg.svd(A, full_matrices=False)
+
+    return U, S, Vt
