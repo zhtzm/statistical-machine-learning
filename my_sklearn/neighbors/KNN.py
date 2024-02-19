@@ -1,10 +1,10 @@
 import numpy as np
 from numpy import ndarray
 
-from model.model import Model
-from utils.data_structure.kd_node import KDNode
-from utils.data_structure.max_heap import MaxHeap
-from utils.find_most_label import find_most_label
+from my_sklearn.model import Model
+from my_sklearn.utils.data_structure import KDNode
+from my_sklearn.utils.data_structure import MaxHeap
+from my_sklearn.utils import find_most_label
 
 
 class KNN(Model):

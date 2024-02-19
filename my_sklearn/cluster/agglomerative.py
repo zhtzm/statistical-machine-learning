@@ -2,7 +2,7 @@ from numpy import ndarray
 from copy import deepcopy
 
 
-class Agglomerative(object):
+class AgglomerativeClustering(object):
     def __init__(self, X: ndarray):
         super().__init__()
         self.X = X

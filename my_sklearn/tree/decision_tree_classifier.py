@@ -2,9 +2,9 @@ import copy
 
 import numpy as np
 
-from model.model import Model
-from utils.find_most_label import find_most_label
-from utils.Gini import Gini
+from my_sklearn.model import Model
+from my_sklearn.utils import find_most_label
+from my_sklearn.utils.Gini import Gini
 
 
 class DecisionTreeClassifier(Model):

@@ -1,8 +1,8 @@
 import numpy as np
 from numpy import ndarray
 
-from model.model import Model
-from utils.kernel import gaussian_kernel
+from my_sklearn.model import Model
+from my_sklearn.utils.kernel import gaussian_kernel
 
 
 class SVC(Model):

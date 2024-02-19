@@ -1,7 +1,7 @@
 import numpy as np
 
-from model.model import Model
-from utils.signal_function import sign
+from my_sklearn.model import Model
+from my_sklearn.utils.signal_function import sign
 
 
 class Perceptron(Model):

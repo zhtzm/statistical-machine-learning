@@ -1,6 +1,6 @@
 import numpy as np
 
-from model.model import Model
+from my_sklearn.model import Model
 
 
 class LogisticRegression(Model):

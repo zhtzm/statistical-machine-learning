@@ -3,10 +3,10 @@ import random
 import numpy as np
 from numpy import ndarray
 
-from model.clustering.agglomerative import Agglomerative
+from my_sklearn.cluster.agglomerative import Agglomerative
 
 
-class Kmeans(object):
+class KMeans(object):
     def __init__(self, X: ndarray, k):
         self.X = X
         self.n = X.shape[0]

@@ -1,7 +1,7 @@
 from numpy import ndarray
 
-from model.model import Model
-from utils.LSE import ridge_LSE
+from my_sklearn.model import Model
+from my_sklearn.utils import ridge_LSE
 
 
 class Ridge(Model):
